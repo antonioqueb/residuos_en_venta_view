@@ -1,0 +1,16 @@
+<odoo>
+    <record id="view_order_form_residuos_a_recolectar" model="ir.ui.view">
+        <field name="name">sale.order.form.residuos.a.recolectar</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook/page[@name='order_lines']" position="after">
+                <page string="Recolección de Residuos">
+                    <field name="residuos_a_recolectar_ids"
+                           widget="many2many_tags"
+                           options="{'no_create': False}"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
