@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <xpath expr="//sheet/notebook/page[@name='order_lines']" position="after">
                 <page string="Recolección de Residuos">
-                    <field name="residuos_autorizados_ids"
+                    <field name="residuos_a_recolectar_ids"
                            widget="many2many_tags"
                            options="{'no_create': False}"/>
                 </page>
