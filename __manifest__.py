@@ -4,8 +4,7 @@
     "summary": "Muestra el campo residuos_a_recolectar_ids en la orden de venta",
     "author": "Alphaqueb Consulting",
     "depends": [
-        "sale_management",
-        "residuos_autorizados_partner"  # Reemplaza con el nombre real
+        "sale_management"
     ],
     "data": [
         "views/sale_order_view.xml",
